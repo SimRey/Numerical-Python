@@ -45,38 +45,45 @@ plt.show()
 x = np.linspace(-5, 5, 101)
 figu = plt.figure(figsize=(6, 4))
 gs = mpl.gridspec.GridSpec(4, 4)
+
 ax0 = figu.add_subplot(gs[0, 0])
 ax01 = figu.add_axes(ax0)
 ax01.plot(x, x)
+
 ax1 = figu.add_subplot(gs[1, 1])
 ax11 = figu.add_axes(ax1)
 ax11.plot(x, np.sin(x))
+
 ax2 = figu.add_subplot(gs[2, 2])
 ax21 = figu.add_axes(ax2)
 ax21.plot(x, np.cos(x))
+
 ax3 = figu.add_subplot(gs[3, 3])
 ax31 = figu.add_axes(ax3)
 ax31.plot(x, x**2)
+
 ax4 = figu.add_subplot(gs[0, 1:])
 ax41 = figu.add_axes(ax4)
 ax41.plot(x, x**3)
+
 ax5 = figu.add_subplot(gs[1:, 0])
 ax51 = figu.add_axes(ax5)
 ax51.plot(x, np.tan(x))
+
 ax6 = figu.add_subplot(gs[1, 2:])
 ax61 = figu.add_axes(ax6)
 ax61.plot(x, np.exp(x))
+
 ax7 = figu.add_subplot(gs[2:, 1])
 ax71 = figu.add_axes(ax7)
 ax71.plot(x, np.sqrt(x))
+
 ax8 = figu.add_subplot(gs[2, 3])
 ax81 = figu.add_axes(ax8)
 ax81.plot(x, np.log(x))
+
 ax9 = figu.add_subplot(gs[3, 2])
 ax91 = figu.add_axes(ax9)
 ax91.plot(x, np.arcsin(x))
-
-
-
 
 plt.show()
